@@ -1,0 +1,34 @@
+body {
+  background-color: #282828;
+  margin: auto;
+  text-align: center;
+}
+
+.turns{
+  border-radius: 0;
+  background-color: inherit;
+  border: 0;
+  font-size: 2em;
+}
+
+.btn-primary {
+  color: #00fff0;
+}
+
+.btn-default:hover {
+  background-color: #99ffed;
+}
+
+a {
+  color: #757575;
+}
+
+.tic {
+  font-size: 3em;
+  height: 100px;
+  width: 100px;
+  border-radius: 0;
+  background-color: #00fff0;
+  border: 0;
+  margin: 2px 0;
+}
