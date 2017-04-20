@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/public/css/tictactoe.css">
     <script
@@ -11,24 +12,24 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <div class='container text-center'>
-      <a class='btn btn-primary turns' id='turnX'>x turn</a>
-      <a class='btn btn-primary turns' id='turnO'>o turn</a>
+    <div class='container'>
+      <h1>tic-tac-toe</h1>
       <div class='row'>
-        <a class='btn btn-default tic' id='0'></a>
-        <a class='btn btn-default tic' id='1'></a>
-        <a class='btn btn-default tic' id='2'></a>
+        <a class='btn tic' id='0'><span class='empty'>#</span></a>
+        <a class='btn tic' id='1'><span class='empty'>#</span></a>
+        <a class='btn tic' id='2'><span class='empty'>#</span></a>
       </div>
       <div class='row'>
-        <a class='btn btn-default tic' id='3'></a>
-        <a class='btn btn-default tic' id='4'></a>
-        <a class='btn btn-default tic' id='5'></a>
+        <a class='btn tic' id='3'><span class='empty'>#</span></a>
+        <a class='btn tic' id='4'><span class='empty'>#</span></a>
+        <a class='btn tic' id='5'><span class='empty'>#</span></a>
       </div>
       <div class='row'>
-        <a class='btn btn-default tic' id='6'></a>
-        <a class='btn btn-default tic' id='7'></a>
-        <a class='btn btn-default tic' id='8'></a>
+        <a class='btn tic' id='6'><span class='empty'>#</span></a>
+        <a class='btn tic' id='7'><span class='empty'>#</span></a>
+        <a class='btn tic' id='8'><span class='empty'>#</span></a>
       </div>
+      <div id='winner'></div>
     </div>
 
     <script src='/public/js/tictactoe.js'></script>
