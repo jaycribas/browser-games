@@ -38,9 +38,14 @@ a.btn {
   top: 50%;
 }
 
-#winner {
+.winner {
   color: white;
-  font-size: 4em;
+  font-size: 5em;
+}
+
+.reset {
+  color: white;
+  font-size: 1.5em;
 }
 
 .tic {
