@@ -349,10 +349,23 @@ function runLevel(level, Display, andThen) {
 }
 
 function runGame(plans, Display) {
+  var lives = 3;
+  var livesSpan = document.getElementById('lives');
+
   function startLevel(n) {
+    livesSpan.textContent = lives
     runLevel(new Level(plans[n]), Display, function(status) {
-      if (status == "lost")
-        startLevel(n)
+      if (status == "lost"){
+        lives--
+        if (lives === 0){
+          livesSpan.textContent = 'GAME OVER'
+          setTimeout(function(){
+           window.location.reload(1);
+          }, 5000);
+        }
+        else
+          startLevel(n)
+        }
       else if (n < plans.length - 1)
         startLevel(n + 1)
       else
