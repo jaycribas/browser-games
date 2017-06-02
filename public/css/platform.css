@@ -37,7 +37,31 @@
 
 .game {
   overflow: hidden;
+  margin: auto;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+h1.game-over{
+  display: inline-block;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 0 10px 500px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.heart {
+  color: rgb(255, 100, 100) !important;
+}
+
+body {
+  color: rgb(64, 64, 64);
+  font-family: 'Passion One', cursive;
+  margin: auto;
+  text-align: center;
 }
