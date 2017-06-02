@@ -392,7 +392,7 @@ function runGame(plans, Display) {
       else if (n < plans.length - 1)
         startLevel(n + 1)
       else
-        console.log("You win!")
+        livesSpan.textContent = 'WINNER!!!'
     })
   }
   startLevel(0)
